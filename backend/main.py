@@ -1,21 +1,24 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from database import engine, Base
 from routes import upload, actions
 from dotenv import load_dotenv
 import os
 
 load_dotenv()
 
+Base.metadata.create_all(bind=engine)
+
 app = FastAPI(
     title="NyayTrack API",
-    description="AI-Powered Court Order Compliance Engine",
+    description="AI-Powered Court Order Compliance Engine - Powered by NVIDIA NIM",
     version="1.0.0"
 )
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
-    allow_credentials=True,
+    allow_origins=["*"],
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )
