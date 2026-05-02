@@ -21,7 +21,7 @@ _Bridging Court Judgments to Ground-Level Action_
 
 **🏆 AI for Bharat Hackathon 2026 | Theme 11: From Court Judgments to Verified Action Plans**
 
-[🌐 Live Demo](#) · [📹 Video Walkthrough](#) · [📖 Documentation](#setup) · [🐛 Report Bug](https://github.com/yashwanthprabhu07/NyayTrack/issues)
+[🌐 Live Demo](https://nyay-track.vercel.app) · [📖 API Docs](https://nyaytrack-backend.onrender.com/docs) · [💻 GitHub](https://github.com/yashwanthprabhu07/NyayTrack)
 
 </div>
 
