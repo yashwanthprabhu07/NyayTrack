@@ -1,0 +1,16 @@
+# Python
+backend/venv/
+backend/__pycache__/
+backend/routes/__pycache__/
+backend/services/__pycache__/
+*.pyc
+
+# Node
+frontend/node_modules/
+
+# Environment - NEVER push this!
+backend/.env
+
+# OS
+.DS_Store
+Thumbs.db
