@@ -70,17 +70,31 @@ PDF Upload → OCR Extraction → NVIDIA NIM AI → Action Cards → Dashboard �
 
 ## 🏗️ Architecture
 
-┌─────────────────────────────────────────────────────────┐
-│ NyayTrack System │
-├─────────────┬───────────────────┬───────────────────────┤
-│ Frontend │ Backend │ AI Engine │
-│ React.js │ FastAPI │ NVIDIA NIM │
-│ Tailwind │ PostgreSQL │ Llama 3.1 8B │
-│ Dashboard │ SQLAlchemy │ Legal Extraction │
-├─────────────┴───────────────────┴───────────────────────┤
-│ OCR Pipeline │
-│ pdfplumber (digital) + Tesseract (scanned) │
-└─────────────────────────────────────────────────────────┘
+**PDF** → **OCR Engine** → **NVIDIA NIM AI** → **Action Cards** → **Dashboard**
+
+**Frontend Layer**
+
+- React.js 18 + Tailwind CSS
+- Real-time Dashboard
+- Citizen Search Portal
+
+**Backend Layer**
+
+- Python FastAPI
+- PostgreSQL Database
+- SQLAlchemy ORM
+
+**AI Layer**
+
+- NVIDIA NIM (Llama 3.1 8B)
+- Legal Directive Extraction
+- Confidence Scoring
+
+**OCR Layer**
+
+- pdfplumber for digital PDFs
+- Tesseract for scanned PDFs
+- OpenCV preprocessing
 
 ---
 
